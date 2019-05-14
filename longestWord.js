@@ -9,9 +9,7 @@ function longestWord(sen) {
     //console.log(wordArr);
 
     //then sort by length
-    const sorted = wordArr.sort(function(a, b) {
-        return b.length - a.length;
-    });
+    const sorted = wordArr.sort((a, b) => b.length - a.length);
 
     //this checks to see if working
     //console.log(sorted);
@@ -20,11 +18,17 @@ function longestWord(sen) {
     //return sorted[0];
 
     //if multiple words are returned for longest
-    const longestWordArr = sorted.filter(function(word) {
-        return word.length === sorted[0].length;
-    });
+    const longestWordArr = sorted.filter((word) => word.length === sorted[0].length);
 
-    console.log(longestWordArr);
+    if (longestWordArr.length === 1) {
+        //return longestWordArr[0];
+        console.log(longestWordArr[0]);
+    } else {
+        //return longestWordArr;
+        console.log(longestWordArr);
+    }
+
+    //console.log(longestWordArr);
 }
 
 longestWord("That's it! I've come up with a new recipeh!");
