@@ -10,7 +10,7 @@ function reverseString(str) {
     return joinArr;
 }
 
-reverseString("hello");
+console.log(reverseString("hello"));
 
 //cleaner and prettier
 function reverseString(str) {
@@ -20,7 +20,7 @@ function reverseString(str) {
         .join("");
 }
 
-reverseString("Hakuna Matata");
+console.log(reverseString("Hakuna Matata"));
 
 //for loop
 function reverseString(str) {
@@ -35,21 +35,7 @@ function reverseString(str) {
     return newStr;
 }
 
-reverseString("Noctis");
-
-//another for loop w/decrement
-function reverseString(str) {
-    //placeholder
-    let revString = "";
-    //create a for loop starting at -1 (this is the last character of a string)
-    for (let i = str.length - 1; i--) {
-        revString = str[i] + revString;
-    }
-    //return newly reversed string
-    return revString;
-}
-
-reverseString("Gladio");
+console.log(reverseString("Noctis"));
 
 //another for loop w/increment
 function reverseString(str) {
@@ -77,7 +63,7 @@ function reverseString(str) {
     return revString;
 }
 
-reverseString("Ignis");
+console.log(reverseString("Ignis"));
 
 //for each loop
 function reverseString(str) {
@@ -89,7 +75,7 @@ function reverseString(str) {
     return revString;
 }
 
-reverseString("Prompto");
+console.log(reverseString("Prompto"));
 
 //added es6
 //for each loop
@@ -100,7 +86,7 @@ function reverseString(str) {
     return revString;
 }
 
-reverseString("Prompto");
+console.log(reverseString("Gladio"));
 
 //reduce w/es6
 function reverseString(str) {
@@ -108,4 +94,4 @@ function reverseString(str) {
         char + revString, "");
 }
 
-reverseString("Regis");
+console.log(reverseString("Regis"));
